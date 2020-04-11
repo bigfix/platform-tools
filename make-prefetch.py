@@ -14,9 +14,9 @@ import hashlib
 import os
 import sys
 
-usage = """make-prefetch.py [options] <file or url>
+usage = make-prefetch.py E:\CylanceEL7\Install.sh.temp
 
-Create a prefetch statement for BigFix ActionScript
+"""Create a prefetch statement for BigFix ActionScript
 
 Options:
   -a, --algorithm ALGORITHM    Hash algorithm to use (all, sha1, sha256)
@@ -158,7 +158,7 @@ if args.url != None:
   file['url'] = args.url
 
 if file['url'] == '':
-  file['url'] = 'http://REPLACEME'
+  file['url'] = 'E:\CylanceEL7\Install.sh.temp'
 
 if args.output == 'value':
   output = value_output(args.algorithm)
